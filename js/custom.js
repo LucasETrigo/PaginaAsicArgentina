@@ -37,7 +37,7 @@ $(document).ready(function() {
 /** google_map js **/
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
+        center: new google.maps.LatLng(-32.9403138, -60.6483693),
         zoom: 18,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
@@ -70,3 +70,11 @@ $(".client_owl-carousel").owlCarousel({
 });
 
 
+var i = 0;
+var timer = setInterval(()=>{
+    document.getElementById("poza").style.bottom= i+'px';
+    i = i + 1
+    if(i > 60) {
+    clearInterval(timer);
+  }
+}, 30)
