@@ -72,7 +72,7 @@ $(".client_owl-carousel").owlCarousel({
 
 var i = 0;
 var timer = setInterval(()=>{
-    document.getElementById("poza").style.bottom= i+'px';
+    document.getElementById("poza").style.top= i+'px';
     i = i + 1
     if(i > 60) {
     clearInterval(timer);
