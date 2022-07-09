@@ -1025,3 +1025,8 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.btn_box a {
+  color: white;
+  text-decoration: none;
+}
